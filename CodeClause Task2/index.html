@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="heading">
+            <h1>Contact Form</h1>
+        </div>
+        <div class="Body">
+            <form action="action.html" class="Form">
+                <div class="con">
+                    Name: <br><input type="text" name="Name" placeholder="First Name.." class="Name" required>
+                    <input type="text" name="Name" placeholder="Last Name.." class="Name" required>
+                </div>
+                <div class="con">
+                    Email: <br><input type="email" name="Email" placeholder="Enter Your Email.." class="Input" required>
+                </div>
+                <div class="con">
+                    DOB: <br><input type="date" name="Date" class="Input" required>
+                </div>
+                <div class="con">
+                    Gender: <br><input type="radio" id="Male" name="Gender"><label for="Male">Male</label>
+                    <br><input type="radio" id="Female" name="Gender"><label for="Female">Female</label>
+                </div>
+                <div class="con">
+                    Contact Number: <br><input type="text" name="Contact" placeholder="Enter Your Mobile Number.."
+                        class="Input" required>
+                </div>
+                <div class="con">
+                    Address: <br><input type="text" name="Address" placeholder="Enter Your Present Address.."
+                        class="Input" required>
+                </div>
+                <div class="con">
+                    Any Quieries: <br><textarea name="Quieries" id="Quieries" cols="73" rows="10"></textarea>
+                </div>
+                <div class="wrap">
+                    Enter Captcha:
+                    <div class="captch">
+                        <div class="cimg">
+                            <img src="captcha.png" alt="">
+                            <span class="captcha"></span>
+                        </div>
+                        <button class="reload">
+                            <i class="fas fa-redo-alt" width="10px" height="10px"></i>
+                        </button>
+                    </div>
+                    <div class="input-captcha">
+                        <input type="text" class="icap" placeholder="Enter Captcha.." required>
+                        <button class="btn">Check</button>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <div class="submit">
+                    <button class="sub-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
